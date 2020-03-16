@@ -23,4 +23,4 @@ class Skill(BaseModel, Base):
     PHP = Column(Integer, nullable=True)
     C_sharp = Column(Integer, nullable=True)
     MATLAB = Column(Integer, nullable=True) 
-    user_id = Column(String(60), ForeignKey('users.id'), nullable=False)
+    user_id = Column(String(60), ForeignKey('user.id'), nullable=False)

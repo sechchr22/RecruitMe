@@ -15,7 +15,7 @@ class User(BaseModel, Base):
         github: user githubaccount
     """
 
-    __tablename__ = 'users'
+    __tablename__ = 'user'
     name = Column(String(128), nullable=False)
     password = Column(String(128), nullable=False)
     email = Column(String(128), nullable=False)
