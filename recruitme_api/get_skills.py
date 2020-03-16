@@ -68,7 +68,7 @@ if __name__ == "__main__":
             if l == 'C++':
                 skill_obj.C_plus_plus = languages[l]
             if l == 'C#':
-                skill_obj.C_sharp = lenguages[l]
+                skill_obj.C_sharp = languages[l]
             else:
                 setattr(skill_obj, l, languages[l])
 
