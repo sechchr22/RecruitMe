@@ -1,0 +1,126 @@
+/* main styles */
+.app .navbar img {
+  width: 220px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-body .btn {
+  align-content: center;
+}
+
+.welcome .iphone-mockup {
+  max-width: 95%;
+}
+
+.welcome {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background: url(../images/work-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.welcome:before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .9;
+  background: #212529;
+}
+
+@media (max-width: 767.98px) {
+  .welcome .inner-wrapper {
+    text-align: center;
+  }
+}
+..welcome .inner-wrapper {
+    padding-top: 4.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  ..welcome .welcome-heading {
+    font-size: 2.415rem;
+  }
+}
+
+.app-screenshot {
+  background: url("../images/tomasz-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app-screenshot:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #e9ecef;
+  opacity: .6;
+}
+
+.app-screenshot img {
+  max-width: 300px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: 0 13px 25px rgba(0, 0, 0, 0.05), 0 60px 100px rgba(192, 192, 192, 0.5);
+}
+
+@media (max-width: 991.98px) {
+  .app-screenshot img {
+    display: table;
+    position: static;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    margin: 0 auto;
+  }
+}
+
+.feature .icon {
+  border-radius: 50%;
+  min-width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(33, 37, 41, 0.1), 0 7px 14px rgba(33, 37, 41, 0.1);
+  font-size: 27px;
+}
+
+@media (max-width: 767.98px) {
+  .shards-app-promo-page--1 .feature .icon {
+    margin-right: 1.5rem !important;
+  }
+}
+
+.breadcrumb {
+  background-color: white;
+  margin-bottom: 0px;
+  
+}
+
+.breadcrumb li a {
+  color: #28a745;
+}
+
+.breadcrumb li a:hover {
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+.testimonials .avatar {
+  max-width: 80px;
+  overflow: hidden;
+}
