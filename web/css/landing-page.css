@@ -1,0 +1,15 @@
+.testimonial > p > a {
+  color: #17c671;
+}
+
+.testimonial > p > a:hover {
+  color: #28a745; 
+}
+
+.testimonials > p > a {
+  color: #17c671;
+}
+
+.testimonials > p > a:hover {
+  color: #28a745; 
+}
