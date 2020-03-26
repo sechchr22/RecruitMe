@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecruitMe</title>
+  <meta name="description" content="web app principal page">
+  <link rel="shortcut icon" href="images/icono.png">
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Shards-3.0.0/css/shards.min.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/recruiter_1.css">
+</head>
+
+<body class="app">
+
+ <!-- Welcome section-->
+  <div class="welcomekey d-flex justify-content-center flex-column">
+   <div class="container">
+
+     <!-- navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
+       <a class="navbar-brand mr-5" href="#">
+         <img src="images/final_logo_green_shards.png" class="mr-2" alt="RecruitMe">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ol class="breadcrumb ml-auto">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="recruiter_search.html">search</a></li>
+          <li class="breadcrumb-item active" aria-current="page">candidate</li>
+        </ol>
+     </div>
+     </nav>
+     <!-- end navigation-->
+
+   </div>
+   <!-- end container -->
+
+   <div class="section-title text-center m-5"></div>
+   <div class="container">
+     <div class="py-1">
+       <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <div class="profile">
+                  <img src="images/avatardefault.jpg" alt="recruiter">
+                </div>
+                <p class="card-text"><strong>Ramiro Peralta</strong></p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-md-9 col-lg-9">
+             <div class="card mb-6">
+               <!--<img class="card-img-top" src="images/dev_logo.png" alt="card developer">-->
+               <div class="card-body text-center">
+                 <h4 class="card-title">My Personal Info</h4><br>
+                 <p class="card-text"><strong>Full name: </strong> Ramiro Andres Peralta Gonzalez<br><strong>Email: </strong>ramiro.peralta@gmail.com<br><strong>WhatsApp: </strong>3001112222<br><strong>LinkedIn URL: </strong>https://www.linkedin.com/in/ramiro/</p>
+               </div>
+             </div>
+           </div>
+       </div>
+       <div class="py-3">
+         <div class="row">
+          <div class="col-md-6 col-lg-6">
+             <div class="card mb-6">
+               <!--<img class="card-img-top" src="images/dev_logo.png" alt="card developer">-->
+               <div class="card-body text-center">
+                 <h4 class="card-title">Skills</h4><br>
+                 <canvas id="myChart" width="350" height="350" class="chartjs-render-monitor"></canvas><br>
+                 <button class="btn btn-success" id="changeCircleSize">Semi/Full Circle</button>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6 col-lg-6">
+             <div class="card mb-6">
+               <!--<img class="card-img-top" src="images/dev_logo.png" alt="card developer">-->
+               <div class="card-body text-center">
+                 <h4 class="card-title">Experience</h4><br>
+                 <p class="card-text"><strong>Company: </strong> Megacorp.inc</p>
+                 <p class="card-text"><strong>Technologies: </strong>Pythorch, Django, MySQL, SCRUM methodology, MATLAB </p><br>
+                 <div id="shards-custom-slider">
+                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-1" >
+                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-2" >
+                </div><br>
+                 <p class="card-text"><strong>Company: </strong> Linecorp.inc</p>
+                 <p class="card-text"><strong>Technologies: </strong>Python, Django, MySQL, Flask</p><br>
+                 <div id="custom-slider">
+                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-1" >
+                  <input type="hidden" class='custom-slider-input' name="custom-slider-value-2" >
+                </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+  <!-- end welcome -->
+
+  <!-- Optional JacaScript Dependencies: JQuery, Popper, Bootstrap and Shards-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="Shards-3.0.0/js/shards.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script>
+  jQuery('#shards-custom-slider').customSlider({
+    start: [2017, 2020],
+    tooltips: [true, true],
+    connect: true,
+    range: {
+      'min': 2015,
+      'max': 2020
+    },
+    step: 1,
+    pips: {
+      mode: 'steps',
+      values: [2010, 2015, 2020],
+      density: 4
+      }
+  });
+</script>
+<script>
+  jQuery('#custom-slider').customSlider({
+    start: [2015, 2017],
+    tooltips: [true, true],
+    connect: true,
+    range: {
+      'min': 2015,
+      'max': 2020
+    },
+    step: 1,
+    pips: {
+      mode: 'steps',
+      values: [2010, 2015, 2020],
+      density: 4
+      }
+  });
+</script>
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['Python', 'C', 'JavaScript', 'MATLAB', 'Go'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: ['#f6a6b2','#b7ded2','#f7c297','#ffecb8','#ffeead'],
+            borderColor: '#ffffff',
+            data: [156789, 56000, 456812, 134099, 45678]
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      animation: {
+        animationScale: true,
+        animationRotate: true
+      }
+    }
+});
+  document.getElementById('changeCircleSize').addEventListener('click', function() {
+  if (window.myDoughnut.options.circumference === Math.PI) {
+  window.myDoughnut.options.circumference = 2 * Math.PI;
+  window.myDoughnut.options.rotation = -Math.PI / 2;
+  } else {
+  window.myDoughnut.options.circumference = Math.PI;
+  window.myDoughnut.options.rotation = -Math.PI;
+  }
+
+  window.myDoughnut.update();
+  });
+  </script>
+</body>
+</html>

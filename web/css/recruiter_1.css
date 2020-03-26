@@ -1,0 +1,7 @@
+.profile > img {
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  width: 110px;
+  height: 110px;
+}
